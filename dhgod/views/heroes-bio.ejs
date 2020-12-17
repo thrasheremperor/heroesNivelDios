@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+</head>
+<body>
+  <h1><%= title %></h1>
+  <% if (heroe === undefined) { %>
+      <h2><%= textNotFound %></h2>
+  <% } else if ( status === 'ok') { %>
+      <h2>Heroe: <%= heroe.nombre %> </h2> 
+      <h3>Reseña: <%= heroe.resenia %></h3>
+  <% } else { %>
+      <h2><%= heroe.nombre %> dice: Lamento que no quieras saber más de mí :( </h2> 
+  <% } %>
+</body>
+</html>
