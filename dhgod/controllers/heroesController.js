@@ -5,7 +5,7 @@ module.exports={
     heroes:(req,res)=>{
         res.render('heroes', {
             title: 'Digital Heroes',
-            heroes: heroes
+            heroes
         });
     },
     heroesDetalles:(req,res)=>{
@@ -13,7 +13,7 @@ module.exports={
         res.render('heroes-detail', {
             title: 'Digital Heroes',
             text: "Heroe no encontrado",
-            heroe: heroe
+            heroe
         });
     },
     heroesBio:(req,res)=>{
@@ -22,8 +22,8 @@ module.exports={
         res.render('heroes-bio', {
             title: 'Digital Heroes',
             textNotFound: "No encontramos un heroe para mostrarte su biografia",
-            status: status,
-            heroe: heroe
+            status,
+            heroe
         });
     }
 };
